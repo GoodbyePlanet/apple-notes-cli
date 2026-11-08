@@ -1,0 +1,30 @@
+{
+  "name": "apple-notes-cli",
+  "version": "0.1.0",
+  "description": "Read, create and edit Apple Notes from the terminal",
+  "type": "module",
+  "bin": {
+    "notes": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "os": [
+    "darwin"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^15.1.0",
+    "marked": "^18.1.3",
+    "turndown": "^7.2.5"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "@types/turndown": "^5.0.6",
+    "typescript": "^7.0.2"
+  }
+}
